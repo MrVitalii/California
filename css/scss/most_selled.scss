@@ -1,0 +1,60 @@
+$main_font: 'Readex Pro', sans-serif;
+$secondary_font: 'Inter', sans-serif;
+$background_main: #DCE5E2;
+$white: #F5F5F5;
+$black: #000000;
+
+.most_selled {
+  padding-bottom: 74px;
+  h4 {
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+    text-align: center;
+  }
+  img {
+    display: block;
+    width: 100%;
+  }
+  p {
+    padding-top: 10px;
+    text-align: center;
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000;
+  }
+  .content{
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4B4B4B;
+  }
+  .btn {
+    width: 170px;
+    height: 50px;
+    border: 1px solid #000000;
+    border-radius: 200px;
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: $black;
+    margin-left: 90px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+  }
+}
+
+
+
+

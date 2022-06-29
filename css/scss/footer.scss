@@ -1,0 +1,70 @@
+$main_font: 'Readex Pro', sans-serif;
+$secondary_font: 'Inter', sans-serif;
+$background_main: #DCE5E2;
+$white: #F5F5F5;
+$black: #000000;
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+
+footer {
+  .webflow {
+    margin-left: 783px;
+  }
+
+  .made_by {
+    border-top: 2px solid #DCE5E2;
+    @include max-screen(390px) {
+      margin-left: 125px;
+    }
+  }
+
+  p {
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    padding-top: 18px;
+  }
+
+  h5 {
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+  }
+
+  a {
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 22px;
+    color: #000000;
+    text-decoration: none!important;
+  }
+  li{
+    padding-bottom: 14px;
+  }
+}
+
+
+
+
+
+
+

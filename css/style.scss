@@ -5,10 +5,12 @@
 @import "bootstrap.css";
 @import "owl.carousel.css";
 @import "owl.theme.default.css";
-@import "header";
-@import "main.page";
-@import "latest_offers";
-@import "footer";
+@import "scss/header";
+@import "scss/main.page";;
+@import "scss/latest_offers";
+@import "scss/most_selled";
+@import "scss/see_the_best";
+@import "scss/footer";
 
 $main_font: 'Readex Pro', sans-serif;
 $secondary_font: 'Inter', sans-serif;

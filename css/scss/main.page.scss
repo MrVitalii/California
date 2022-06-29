@@ -1,0 +1,103 @@
+$main_font: 'Readex Pro', sans-serif;
+$secondary_font: 'Inter', sans-serif;
+$background_main: #DCE5E2;
+$white: #F5F5F5;
+$black: #000000;
+
+.main_page {
+  .container {
+    background-image: url("../../images/Main_page.jpg");
+    border-radius: 32px;
+    height: 550px;}
+  .row {
+    margin-left: 10px;
+  }
+  h1 {
+    margin-top: 145px;
+    padding-bottom: 19px;
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 70px;
+    color: $black;
+  }
+  h2 {
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: $black;
+    padding-bottom: 30px;
+  }
+  .btn {
+    width: 170px;
+    height: 50px;
+    border: 1px solid #000000;
+    border-radius: 200px;
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: $black;
+  }
+  .iphones {
+    position: absolute;
+    width: 647px;
+    height: 550px;
+    border-radius: 0;
+    margin-left: 520px;
+  }
+}
+
+.owl-nav {
+  margin-left: 200px;
+}
+
+.owl-nav .owl-prev:after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 24px;
+  content: "\f053";
+  color: black;
+  position: absolute;
+  margin-top: -298px;
+  margin-left: -730px;
+
+}
+
+.owl-nav .owl-next:after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  font-size: 24px;
+  content: "\f054";
+  color: black;
+  position: absolute;
+  margin-top: -298px;
+  margin-left: 365px;
+}
+
+.owl-dots {
+  position: absolute;
+  bottom: 10px;
+  left: -400px;
+  .owl-dot span {
+    display: inline-block;
+    width: 194px;
+    height: 2px;
+    background-color: black;
+    border-radius: 0;
+    margin: 40px;
+  }
+  .owl-dot.active span {
+    background: cornflowerblue !important;
+  }
+}
+
+
+
+
+

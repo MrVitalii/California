@@ -300,7 +300,7 @@ nav li:nth-of-type(6) {
   nav li a:before {
     width: 15px; } }
 .main_page .container {
-  background-image: url("../images/Main_page.jpg");
+  background-image: url("../../images/Main_page.jpg");
   border-radius: 32px;
   height: 550px; }
 .main_page .row {
@@ -379,68 +379,120 @@ nav li:nth-of-type(6) {
     background: cornflowerblue !important; }
 
 .latest_offers {
-  padding-top: 75px; }
-  .latest_offers h1 {
-    font-family: 'Readex Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 42px;
-    line-height: 52px;
-    text-align: center;
-    color: #000000; }
-  .latest_offers p {
-    font-family: 'Readex Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    width: 628px;
-    margin: auto;
-    text-align: center; }
+  padding-top: 75px;
+  padding-bottom: 75px; }
 
-footer {
-  padding: 74px 0; }
-
-footer {
-  padding: 100px 0;
-  color: black; }
-
-.made_by {
-  padding: 36px 0;
-  border-top: 2px solid #DCE5E2; }
-
-.made {
-  margin-right: 787px;
-  width: 148px; }
-
-.sign_us {
-  padding-top: 18px;
-  width: 304px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 19px;
-  color: #000000; }
-
-.columns {
-  margin-left: 50px; }
-  .columns ul {
-    margin-right: 43px;
-    list-style: none; }
-    .columns ul a {
-      font-family: 'Inter', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 17px;
-      line-height: 22px;
-      color: #000000;
-      text-decoration: none; }
-  .columns .headlines {
+.most_selled {
+  padding-bottom: 74px; }
+  .most_selled h4 {
     font-family: 'Readex Pro', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
+    color: #000000;
+    text-align: center; }
+  .most_selled img {
+    display: block;
+    width: 100%; }
+  .most_selled p {
+    padding-top: 10px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
     color: #000000; }
+  .most_selled .content {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #4B4B4B; }
+  .most_selled .btn {
+    width: 170px;
+    height: 50px;
+    border: 1px solid #000000;
+    border-radius: 200px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-left: 90px;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+
+.see_best {
+  padding-bottom: 74px; }
+  .see_best h4 {
+    font-family: 'Readex Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 35px;
+    text-align: center;
+    color: #000000; }
+  .see_best img {
+    display: block;
+    width: 100%; }
+  .see_best p {
+    font-family: 'Readex Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000; }
+  .see_best .btn {
+    width: 170px;
+    height: 50px;
+    border: 1px solid #000000;
+    border-radius: 200px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-left: 90px;
+    margin-bottom: 30px;
+    margin-top: 30px; }
+
+footer .webflow {
+  margin-left: 783px; }
+footer .made_by {
+  border-top: 2px solid #DCE5E2; }
+@media screen and (max-width: 390px) {
+  footer .made_by {
+    margin-left: 125px; } }
+footer p {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000000;
+  padding-top: 18px; }
+footer h5 {
+  font-family: 'Readex Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+  color: #000000; }
+footer a {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 22px;
+  color: #000000;
+  text-decoration: none !important; }
+footer li {
+  padding-bottom: 14px; }
