@@ -39,7 +39,7 @@ $black: #000000;
     padding-bottom: 56px;
   }
 
-  button {
+  a {
     font-family: $secondary_font;
     font-style: normal;
     font-weight: 400;
@@ -49,11 +49,6 @@ $black: #000000;
     color: #000000;
     text-decoration: none;
     border: none;
-
-    &:hover {
-      transform: scale(1.1);
-      transition: 0.50s;
-    }
   }
 
   .arrow {
