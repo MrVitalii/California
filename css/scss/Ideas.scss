@@ -35,7 +35,7 @@ $black: #000000;
     color: #000000;
     padding-bottom: 56px;
   }
-  h2{
+  a{
     font-family: $secondary_font;
     font-style: normal;
     font-weight: 400;
@@ -43,11 +43,14 @@ $black: #000000;
     line-height: 29px;
     text-transform: capitalize;
     color: #000000;
-    margin-top: 73px;
+    text-decoration: none;
   }
   .arrow{
-    bottom: 35px;
-    left: 52px
+    bottom: 4px;
+    left: -2px
+  }
+  .see_all{
+    margin-top: 73px;
   }
 }
 

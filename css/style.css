@@ -504,7 +504,7 @@ nav li:nth-of-type(6) {
     text-align: center;
     color: #000000;
     padding-bottom: 56px; }
-  .ideas h2 {
+  .ideas a {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -512,37 +512,79 @@ nav li:nth-of-type(6) {
     line-height: 29px;
     text-transform: capitalize;
     color: #000000;
-    margin-top: 73px; }
+    text-decoration: none; }
   .ideas .arrow {
-    bottom: 35px;
-    left: 52px; }
+    bottom: 4px;
+    left: -2px; }
+  .ideas .see_all {
+    margin-top: 73px; }
 
 .looking_for_more {
   padding-bottom: 100px; }
-
-.form-control-borderless {
-  border: none; }
-
-.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
-  border: none;
-  outline: none;
-  box-shadow: none; }
-
-.card {
-  border-radius: 100px;
-  width: 650px;
-  height: 70px;
-  margin-left: 40px; }
-
-.form-control-lg {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  padding-bottom: 21px;
-  padding-left: 26px; }
+  .looking_for_more h1 {
+    font-family: 'Readex Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    text-align: center;
+    color: #000000; }
+  .looking_for_more .btn {
+    border-radius: 200px;
+    background: #FFFFFF;
+    border: 1px solid #C5C5C5;
+    padding: 12px 22px 13px 22px;
+    margin-right: 7px; }
+    .looking_for_more .btn:hover {
+      background-color: #4e555b;
+      transform: scale(1.2);
+      transition: 0.5s; }
+  .looking_for_more i:hover {
+    transform: scale(1.2);
+    transition: 0.5s; }
+  .looking_for_more a {
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000; }
+  .looking_for_more .first_line {
+    margin-left: 292px; }
+  @media screen and (max-width: 390px) {
+    .looking_for_more .first_line {
+      margin-left: 50px; }
+      .looking_for_more .first_line .last_button {
+        margin-left: 70px; } }
+  .looking_for_more .second_line {
+    margin-left: 350px; }
+  @media screen and (max-width: 390px) {
+    .looking_for_more .second_line {
+      margin-left: 50px; }
+      .looking_for_more .second_line .last_button {
+        margin-left: 70px; } }
+  .looking_for_more .form-control-borderless {
+    border: none; }
+  .looking_for_more .form-control-borderless:hover, .looking_for_more .form-control-borderless:active, .looking_for_more .form-control-borderless:focus {
+    border: none;
+    outline: none;
+    box-shadow: none; }
+  .looking_for_more .card {
+    border-radius: 100px;
+    max-width: 650px;
+    height: 70px;
+    margin-left: 40px;
+    justify-content: center; }
+  .looking_for_more .form-control-lg {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    padding-bottom: 21px;
+    padding-left: 26px; }
 
 footer .webflow {
   margin-left: 783px; }
