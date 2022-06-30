@@ -517,6 +517,33 @@ nav li:nth-of-type(6) {
     bottom: 35px;
     left: 52px; }
 
+.looking_for_more {
+  padding-bottom: 100px; }
+
+.form-control-borderless {
+  border: none; }
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none; }
+
+.card {
+  border-radius: 100px;
+  width: 650px;
+  height: 70px;
+  margin-left: 40px; }
+
+.form-control-lg {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding-bottom: 21px;
+  padding-left: 26px; }
+
 footer .webflow {
   margin-left: 783px; }
 footer .made_by {

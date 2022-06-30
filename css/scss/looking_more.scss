@@ -1,0 +1,38 @@
+$main_font: 'Readex Pro', sans-serif;
+$secondary_font: 'Inter', sans-serif;
+$background_main: #DCE5E2;
+$white: #F5F5F5;
+$black: #000000;
+
+
+.looking_for_more{
+  padding-bottom: 100px;
+}
+
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover, .form-control-borderless:active, .form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.card{
+  border-radius: 100px;
+  width: 650px;
+  height: 70px;
+  margin-left: 40px;
+}
+
+.form-control-lg{
+  font-family: $secondary_font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #000000;
+  padding-bottom: 21px;
+  padding-left: 26px;
+}
