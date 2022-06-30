@@ -4,8 +4,36 @@ $background_main: #DCE5E2;
 $white: #F5F5F5;
 $black: #000000;
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
 .latest_offers{
+  .watches {
+    @include max-screen(390px) {
+     max-width: 150px;
+    }
+  }
+  .double_iphones{
+    @include max-screen(390px) {
+      margin-left: 20px;
+      padding-top: 20px;
+      padding-bottom: 10px;
+    }
+  }
   padding-top: 75px;
   padding-bottom: 75px;
+  .card_hover :hover  {
+    transform: scale(0.99);
+    transition: 0.50s;}
 }
+
 

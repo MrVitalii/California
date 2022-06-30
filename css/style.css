@@ -381,6 +381,17 @@ nav li:nth-of-type(6) {
 .latest_offers {
   padding-top: 75px;
   padding-bottom: 75px; }
+  @media screen and (max-width: 390px) {
+    .latest_offers .watches {
+      max-width: 150px; } }
+  @media screen and (max-width: 390px) {
+    .latest_offers .double_iphones {
+      margin-left: 20px;
+      padding-top: 20px;
+      padding-bottom: 10px; } }
+  .latest_offers .card_hover :hover {
+    transform: scale(0.99);
+    transition: 0.5s; }
 
 .most_selled {
   padding-bottom: 74px; }
@@ -391,13 +402,12 @@ nav li:nth-of-type(6) {
     font-size: 22px;
     line-height: 28px;
     color: #000000;
-    text-align: center; }
+    padding-top: 37px; }
   .most_selled img {
     display: block;
     width: 100%; }
   .most_selled p {
     padding-top: 10px;
-    text-align: center;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -463,6 +473,49 @@ nav li:nth-of-type(6) {
     margin-left: 90px;
     margin-bottom: 30px;
     margin-top: 30px; }
+  .see_best .card_hover :hover {
+    transform: scale(1.04);
+    transition: 0.35s; }
+
+.ideas {
+  padding-top: 68px;
+  padding-bottom: 134px; }
+  .ideas h4 {
+    font-family: 'Readex Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    color: #000000; }
+  .ideas p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    color: #000000;
+    padding-bottom: 20px; }
+  .ideas h5 {
+    font-family: 'Readex Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    text-align: center;
+    color: #000000;
+    padding-bottom: 56px; }
+  .ideas h2 {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: capitalize;
+    color: #000000;
+    margin-top: 73px; }
+  .ideas .arrow {
+    bottom: 35px;
+    left: 52px; }
 
 footer .webflow {
   margin-left: 783px; }

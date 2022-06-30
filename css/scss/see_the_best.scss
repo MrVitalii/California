@@ -7,43 +7,51 @@ $black: #000000;
 
 .see_best {
   padding-bottom: 74px;
-  h4 {
-    font-family: $main_font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 35px;
-    text-align: center;
-    color: #000000;
-  }
-  img {
-    display: block;
-    width: 100%;
-  }
-  p {
-    font-family: $main_font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #000000;
 
+    h4 {
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 35px;
+      text-align: center;
+      color: #000000;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    p {
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      text-align: center;
+      color: #000000;
+    }
+    .btn {
+      width: 170px;
+      height: 50px;
+      border: 1px solid #000000;
+      border-radius: 200px;
+      font-family: $secondary_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 22px;
+      text-transform: capitalize;
+      color: $black;
+      margin-left: 90px;
+      margin-bottom: 30px;
+      margin-top: 30px;
+    }
+   .card_hover :hover  {
+    transform: scale(1.04);
+    transition: 0.35s;}
   }
-  .btn {
-    width: 170px;
-    height: 50px;
-    border: 1px solid #000000;
-    border-radius: 200px;
-    font-family: $secondary_font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    text-transform: capitalize;
-    color: $black;
-    margin-left: 90px;
-    margin-bottom: 30px;
-    margin-top: 30px;
-  }
-}
+
+
+
