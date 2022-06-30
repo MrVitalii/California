@@ -29,10 +29,20 @@
             </ul>
         </nav>
     </div>
+    <div class="home">
+        <a class="logo row" href="#"><img src="images/California_logo.svg" alt="logo"></a>
+        <div class="open-overlay">
+            <span class="bar-top"></span>
+            <span class="bar-middle"></span>
+            <span class="bar-bottom"></span>
+        </div>
+    </div>
+
 </header>
 
 <section class="main_page position-relative w-100">
-    <div class="container">
+
+    <div class="container position-relative">
         <div class="home">
             <a class="logo row" href="#"><img src="images/California_logo.svg" alt="logo"></a>
             <div class="open-overlay">
@@ -40,30 +50,51 @@
                 <span class="bar-middle"></span>
                 <span class="bar-bottom"></span>
             </div>
-            <div class="position-absolute d-flex align-items-center">
-                <div>
-                    <div class="row">
-                        <div class="col-12 col-md-7">
-                            <h1>
-                                The new phones are here take a look.
-                            </h1>
-                            <h2>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui,
-                                aliquam,
-                                tempor. Faucibus morbi turpis.
-                            </h2>
-                            <button type="button" class="btn btn-outline-secondary">Explore</button>
-                        </div>
-                        <div class="iphones owl-carousel">
-                            <img src="images/Iphones.svg" alt="logo">
-                            <img src="images/Iphones.svg" alt="logo">
-                            <img src="images/Iphones.svg" alt="logo">
-                        </div>
-                    </div>
-                </div>
+        </div>
+
+        <div class=" owl-carousel">
+            <div class="col-sm-7">
+                <h1>
+                    The new phones are here take a look.
+                </h1>
+                <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui,
+                    aliquam,
+                    tempor. Faucibus morbi turpis.
+                </h2>
+                <button type="button" class="btn btn-outline-secondary">Explore</button>
+                <img class="iphones" src="images/Iphones.svg" alt="logo">
+            </div>
+            <div class="col-sm-7">
+                <h1>
+                    The new phones are here take a look.
+                </h1>
+                <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui,
+                    aliquam,
+                    tempor. Faucibus morbi turpis.
+                </h2>
+                <button type="button" class="btn btn-outline-secondary">Explore</button>
+                <img class="iphones" src="images/Iphones.svg" alt="logo">
+            </div>
+            <div class="col-sm-7">
+                <h1>
+                    The new phones are here take a look.
+                </h1>
+                <h2>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui,
+                    aliquam,
+                    tempor. Faucibus morbi turpis.
+                </h2>
+                <button type="button" class="btn btn-outline-secondary">Explore</button>
+                <img class="iphones" src="images/Iphones.svg" alt="logo">
             </div>
         </div>
+
+
     </div>
+
+
 </section>
 
 <section class="latest_offers">
@@ -106,9 +137,9 @@
                     <h4 class="mb-5  px-1">Empower your work</h4>
                     <img class="d-block w-100" src="images/ipad.jpg" alt="image">
                 </div>
-
             </div>
         </div>
+
     </div>
 </section>
 
@@ -185,7 +216,6 @@
         <h5 class="text-center">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</h5>
         <div class="row align-items-center">
             <div class="col-12 col-lg-7">
-
                 <img src="images/IDEAS.jpg" class="w-100 d-block mb-3" alt="">
             </div>
             <div class="col-12 col-lg-5">
@@ -205,8 +235,8 @@
         </div>
 
     </div>
-    <div class="text-center  see_all">
-        <a href="#">See all </a>
+    <div class="text-center see_all">
+        <button> See all</button>
         <img class="arrow position-relative" src="images/arrow.svg">
     </div>
 </section>
@@ -223,7 +253,7 @@
                 <form class="card card-sm  mb-3  ml-auto mr-auto overflow-hidden">
                     <div class="card-body row no-gutters align-items-center">
                         <div class="col-auto">
-                           <i class="fas h4 text-body"> <img src="images/search_form.svg"></i>
+                            <i class="fas h4 text-body"> <img src="images/search_form.svg"></i>
                         </div>
                         <div class="col">
                             <input class="form-control form-control-lg form-control-borderless" type="search"
@@ -235,13 +265,13 @@
         </div>
         <div class="first_line mb-2">
             <ul class="list-unstyled d-flex row ">
-                <li><a href="#" class="btn btn-light border mb-2" >iPhone</a></li>
+                <li><a href="#" class="btn btn-light border mb-2">iPhone</a></li>
                 <li><a href="#" class="btn btn-light border">Charger</a></li>
                 <li><a href="#" class="btn btn-light border">Gift</a></li>
                 <li><a href="#" class="btn btn-light border">Google Pixel 3</a></li>
                 <li><a href="#" class="btn btn-light border">Keyboard</a></li>
             </ul>
-            </div>
+        </div>
         <div class="second_line mb-2">
             <ul class="list-unstyled d-flex row">
                 <li><a href="#" class="btn btn-light border mb-2">13 Pro Max</a></li>
@@ -254,8 +284,23 @@
     </div>
 </section>
 
-<section>
+<section class="email container">
+    <div class="m-auto">
+        <h1 class="text-center">Never miss a thing</h1>
+        <p class="text-center">Sign up for texts to be notified about our best offers on the perfect gifts.</p>
+        <img class="d-block ml-auto m-auto" src="images/never_miss.svg">
 
+        <form class="m-auto col-12 col-sm-6">
+            <label class="input-group  ">
+
+                <input type="email" class="form-control"
+                       placeholder="Your email">
+                <button>
+                    <span class="">Sign up</span>
+                </button>
+            </label>
+        </form>
+    </div>
 </section>
 
 <footer>

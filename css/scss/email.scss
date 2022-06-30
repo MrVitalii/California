@@ -1,0 +1,95 @@
+$main_font: 'Readex Pro', sans-serif;
+$secondary_font: 'Inter', sans-serif;
+$background_main: #DCE5E2;
+$white: #F5F5F5;
+$black: #000000;
+
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
+.email{
+  background: #DCE5E2;
+  max-width: 935px;
+  height: 450px;
+  border-radius: 16px;
+  h1{
+    font-family: $main_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    color: #000000;
+    padding-top: 47px;
+  }
+  img{
+    @include max-screen(428){
+      margin-right: 100px;
+    }
+  }
+  p{
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+  }
+  .form-control{
+    border: 1px solid #000000;
+    border-radius: 54px 0 0 54px;
+    width: 285px;
+    height: 50px;
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 32px;
+    color: #000000 !important;
+    border-right: none;
+    position: relative;
+    @include max-screen(390px){
+margin-right: 89px;
+    }
+  }
+  button {
+    border: 1px solid #000000;
+    width: 115px;
+    height: 50px;
+    background: #000000;
+    border-radius: 0 200px 200px 0;
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    overflow: hidden;
+
+    @include max-screen(428px) {
+      position: relative;
+      bottom: 50px;
+      left: 275px;
+    }
+    @include max-screen(390px) {
+      position: relative;
+      bottom: 50px;
+      left: 241px;
+    }
+    @include max-screen(360px) {
+      position: relative;
+      bottom: 50px;
+      left: 203px
+    }
+  }
+}
