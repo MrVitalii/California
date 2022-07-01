@@ -4,11 +4,23 @@ $background_main: #DCE5E2;
 $white: #F5F5F5;
 $black: #000000;
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
+@mixin landscape {
+  @media (orientation: landscape) {
+    @content;
+  }
+}
+
 .main_page {
   .container {
     background-color: #DCE5E2;
     border-radius: 32px;
-    height: 550px;
+
   }
 
   .row {
@@ -50,14 +62,8 @@ $black: #000000;
     color: $black;
   }
 
-  .iphones {
-    position: relative;
-    max-width: 647px;
-    bottom: 413px;
-    left: 513px;
-
   }
-}
+
 
 .owl-nav .owl-prev:after {
   font-family: "Font Awesome 6 Free";
@@ -65,9 +71,9 @@ $black: #000000;
   font-size: 24px;
   content: "\f053";
   color: black;
-  position: relative;
-  bottom: 687px;
-  right: 5px;
+  position: absolute;
+  bottom: 240px;
+
 }
 
 .owl-nav .owl-next:after {
@@ -76,15 +82,23 @@ $black: #000000;
   font-size: 24px;
   content: "\f054";
   color: black;
-  position: relative;
-  bottom: 687px;
-  left: 1066px;
+  position: absolute;
+  bottom:240px;
+  left: 1070px;
+  @include max-screen(428px){
+   position: absolute;
+    bottom:240px;
+    left: 380px;
+  }
 }
 
 .owl-dots {
   position: relative;
   bottom: 520px;
   left: 100px;
+  @include max-screen(990px){
+    display: none;}
+}
 
   .owl-dot span {
     display: inline-block;
@@ -93,7 +107,9 @@ $black: #000000;
     background-color: black;
     border-radius: 0;
     margin: 40px;
-  }
+    position: relative;
+top: 500px;
+
 
   .owl-dot.active span {
     background: cornflowerblue !important;
