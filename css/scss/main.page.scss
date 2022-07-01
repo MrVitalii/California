@@ -94,7 +94,7 @@ $black: #000000;
 
 .owl-dots {
   position: relative;
-  bottom: 520px;
+
   left: 100px;
   @include max-screen(990px){
     display: none;}
@@ -107,13 +107,10 @@ $black: #000000;
     background-color: black;
     border-radius: 0;
     margin: 40px;
-    position: relative;
-top: 500px;
+}
 
-
-  .owl-dot.active span {
-    background: cornflowerblue !important;
-  }
+.owl-dot.active span {
+  background: cornflowerblue !important;
 }
 
 

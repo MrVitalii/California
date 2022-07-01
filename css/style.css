@@ -88,7 +88,6 @@ header {
 
 .owl-dots {
   position: relative;
-  bottom: 520px;
   left: 100px; }
   @media screen and (max-width: 990px) {
     .owl-dots {
@@ -100,11 +99,10 @@ header {
   height: 2px;
   background-color: black;
   border-radius: 0;
-  margin: 40px;
-  position: relative;
-  top: 500px; }
-  .owl-dot span .owl-dot.active span {
-    background: cornflowerblue !important; }
+  margin: 40px; }
+
+.owl-dot.active span {
+  background: cornflowerblue !important; }
 
 .latest_offers {
   padding-top: 75px;
