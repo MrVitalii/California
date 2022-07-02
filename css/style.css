@@ -135,12 +135,12 @@ header {
     color: #000000; }
   @media screen and (max-width: 428px) {
     .latest_offers .watches img {
-      max-width: 252px; } }
+      max-width: 177px; } }
   .latest_offers .card_hover :hover {
     transform: scale(0.99);
     transition: 0.5s; }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 320px) {
   .shadow-lg {
     box-shadow: none !important; } }
 
@@ -401,3 +401,17 @@ footer {
     text-decoration: none !important; }
   footer li {
     padding-bottom: 14px; }
+  footer .readex {
+    font-family: 'Readex Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000; }
+  footer .inter {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #000000; }
