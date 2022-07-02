@@ -106,28 +106,7 @@ header {
   padding-bottom: 75px; }
   @media screen and (max-width: 428px) {
     .latest_offers .watches img {
-      max-width: 340px; } }
-  @media screen and (max-width: 375px) {
-    .latest_offers .watches {
-      margin-left: 11px; } }
-  @media screen and (max-width: 390px) {
-    .latest_offers .watches {
-      max-width: 150px; } }
-  @media screen and (max-width: 428px) {
-    .latest_offers .watches {
-      display: flex; } }
-  @media screen and (max-width: 375px) {
-    .latest_offers .double_iphones {
-      margin-right: 42px; } }
-  @media screen and (max-width: 390px) {
-    .latest_offers .double_iphones {
-      margin-left: 20px;
-      padding-top: 20px;
-      padding-bottom: 10px; } }
-  @media screen and (max-width: 428px) {
-    .latest_offers .double_iphones {
-      margin-left: 42px;
-      margin-top: 5px; } }
+      max-width: 252px; } }
   .latest_offers .card_hover :hover {
     transform: scale(0.99);
     transition: 0.5s; }
