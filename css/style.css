@@ -104,6 +104,35 @@ header {
 .latest_offers {
   padding-top: 75px;
   padding-bottom: 75px; }
+  .latest_offers h2 {
+    font-family: 'Readex Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 52px;
+    color: #000000; }
+  .latest_offers .lorem_paragraph {
+    font-family: 'Readex Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    max-width: 628px; }
+  .latest_offers h4 {
+    font-family: 'Readex Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #000000; }
+  .latest_offers p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #000000; }
   @media screen and (max-width: 428px) {
     .latest_offers .watches img {
       max-width: 252px; } }
