@@ -18,16 +18,20 @@ $black: #000000;
 
 
 footer {
+
   padding-top: 63px;
-  .web {
-    position: relative;
-    bottom: 58px;
+
+  .developers{
+    .web {
+      position: relative;
+      bottom: 58px;
+    }
+
   }
 
 
   .line {
     border-top: 2px solid #DCE5E2;;
-
   }
 
   p {

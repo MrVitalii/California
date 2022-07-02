@@ -132,6 +132,10 @@ header {
     transform: scale(0.99);
     transition: 0.5s; }
 
+@media screen and (max-width: 414px) {
+  .shadow-lg {
+    box-shadow: none !important; } }
+
 .most_selled {
   padding-bottom: 74px; }
   .most_selled h4 {
@@ -359,7 +363,7 @@ header {
 
 footer {
   padding-top: 63px; }
-  footer .web {
+  footer .developers .web {
     position: relative;
     bottom: 58px; }
   footer .line {

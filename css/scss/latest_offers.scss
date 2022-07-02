@@ -38,7 +38,6 @@ $black: #000000;
   .double_iphones {
     @include max-screen(375px) {
       margin-right: 42px;
-
     }
     @include max-screen(390px) {
       margin-left: 20px;
@@ -58,6 +57,13 @@ $black: #000000;
     transform: scale(0.99);
     transition: 0.50s;
   }
+}
+
+.shadow-lg{
+  @include max-screen(414px){
+    box-shadow: none!important;
+  }
+
 }
 
 
