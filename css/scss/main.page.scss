@@ -22,6 +22,9 @@ $black: #000000;
     border-radius: 32px;
 
   }
+  img{
+    padding-bottom: 34px;
+  }
 
   .row {
     margin-left: 10px;
@@ -33,7 +36,7 @@ $black: #000000;
     font-family: $main_font;
     font-style: normal;
     font-weight: 400;
-    font-size: 58px;
+    font-size: 55px;
     line-height: 70px;
     color: $black;
   }
@@ -42,10 +45,13 @@ $black: #000000;
     font-family: $secondary_font;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 19px;
     color: $black;
     padding-bottom: 30px;
+    @include max-screen(360px) {
+      margin-right: 6px;
+    }
   }
 
   .btn {
@@ -60,45 +66,47 @@ $black: #000000;
     line-height: 22px;
     text-transform: capitalize;
     color: $black;
+    &:hover{
+     background-color: white;
+      transition: 0.5s;
+    }
+  }
+  .owl-nav .owl-prev:after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 24px;
+    content: "\f053";
+    color: black;
+    position: absolute;
+    bottom: 45%;
+    z-index: 3;
+
   }
 
+  .owl-nav .owl-next:after {
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 24px;
+    content: "\f054";
+    color: black;
+    position: absolute;
+    bottom: 45%;
+    left: 98%;
+    z-index: 3;
+    @include max-screen(320px) {
+      left: 90%;
+    }
   }
 
 
-.owl-nav .owl-prev:after {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  font-size: 24px;
-  content: "\f053";
-  color: black;
-  position: absolute;
-  bottom: 240px;
-
-}
-
-.owl-nav .owl-next:after {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  font-size: 24px;
-  content: "\f054";
-  color: black;
-  position: absolute;
-  bottom:240px;
-  left: 1070px;
-  @include max-screen(428px){
-   position: absolute;
-    bottom:240px;
-    left: 380px;
+  .owl-dots {
+    position: absolute;
+    bottom: 1%;
+    left: 15%;
+    @include max-screen(990px) {
+      display: none;
+    }
   }
-}
-
-.owl-dots {
-  position: relative;
-
-  left: 100px;
-  @include max-screen(990px){
-    display: none;}
-}
 
   .owl-dot span {
     display: inline-block;
@@ -106,12 +114,16 @@ $black: #000000;
     height: 2px;
     background-color: black;
     border-radius: 0;
-    margin: 40px;
+    margin-left: 40px;
+  }
+
+  .owl-dot.active span {
+    background: cornflowerblue !important;
+  }
+
 }
 
-.owl-dot.active span {
-  background: cornflowerblue !important;
-}
+
 
 
 

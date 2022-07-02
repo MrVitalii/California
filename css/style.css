@@ -8,16 +8,6 @@
 header {
   padding-top: 31px;
   padding-bottom: 57px; }
-  header i {
-    color: black; }
-  header .support {
-    margin-right: 190px; }
-  header .main_group {
-    margin-left: 285px; }
-  @media screen and (max-width: 412px) {
-    header .navbar-collapse {
-      position: relative;
-      right: 284px; } }
   header .a {
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -26,10 +16,15 @@ header {
     line-height: 17px;
     text-transform: uppercase;
     color: #000000; }
+  header .hover:hover {
+    transform: scale(1.2);
+    transition: 0.5s; }
 
 .main_page .container {
   background-color: #DCE5E2;
   border-radius: 32px; }
+.main_page img {
+  padding-bottom: 34px; }
 .main_page .row {
   margin-left: 10px; }
 .main_page h1 {
@@ -38,17 +33,20 @@ header {
   font-family: 'Readex Pro', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 58px;
+  font-size: 55px;
   line-height: 70px;
   color: #000000; }
 .main_page h2 {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 19px;
   color: #000000;
   padding-bottom: 30px; }
+@media screen and (max-width: 360px) {
+  .main_page h2 {
+    margin-right: 6px; } }
 .main_page .btn {
   width: 170px;
   height: 50px;
@@ -61,60 +59,75 @@ header {
   line-height: 22px;
   text-transform: capitalize;
   color: #000000; }
-
-.owl-nav .owl-prev:after {
+  .main_page .btn:hover {
+    background-color: white;
+    transition: 0.5s; }
+.main_page .owl-nav .owl-prev:after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   font-size: 24px;
   content: "\f053";
   color: black;
   position: absolute;
-  bottom: 240px; }
-
-.owl-nav .owl-next:after {
+  bottom: 45%;
+  z-index: 3; }
+.main_page .owl-nav .owl-next:after {
   font-family: "Font Awesome 6 Free";
   font-weight: 900;
   font-size: 24px;
   content: "\f054";
   color: black;
   position: absolute;
-  bottom: 240px;
-  left: 1070px; }
-  @media screen and (max-width: 428px) {
-    .owl-nav .owl-next:after {
-      position: absolute;
-      bottom: 240px;
-      left: 380px; } }
-
-.owl-dots {
-  position: relative;
-  left: 100px; }
-  @media screen and (max-width: 990px) {
-    .owl-dots {
-      display: none; } }
-
-.owl-dot span {
+  bottom: 45%;
+  left: 98%;
+  z-index: 3; }
+@media screen and (max-width: 320px) {
+  .main_page .owl-nav .owl-next:after {
+    left: 90%; } }
+.main_page .owl-dots {
+  position: absolute;
+  bottom: 1%;
+  left: 15%; }
+@media screen and (max-width: 990px) {
+  .main_page .owl-dots {
+    display: none; } }
+.main_page .owl-dot span {
   display: inline-block;
   width: 194px;
   height: 2px;
   background-color: black;
   border-radius: 0;
-  margin: 40px; }
-
-.owl-dot.active span {
+  margin-left: 40px; }
+.main_page .owl-dot.active span {
   background: cornflowerblue !important; }
 
 .latest_offers {
   padding-top: 75px;
   padding-bottom: 75px; }
+  @media screen and (max-width: 428px) {
+    .latest_offers .watches img {
+      max-width: 340px; } }
+  @media screen and (max-width: 375px) {
+    .latest_offers .watches {
+      margin-left: 11px; } }
   @media screen and (max-width: 390px) {
     .latest_offers .watches {
       max-width: 150px; } }
+  @media screen and (max-width: 428px) {
+    .latest_offers .watches {
+      display: flex; } }
+  @media screen and (max-width: 375px) {
+    .latest_offers .double_iphones {
+      margin-right: 42px; } }
   @media screen and (max-width: 390px) {
     .latest_offers .double_iphones {
       margin-left: 20px;
       padding-top: 20px;
       padding-bottom: 10px; } }
+  @media screen and (max-width: 428px) {
+    .latest_offers .double_iphones {
+      margin-left: 42px;
+      margin-top: 5px; } }
   .latest_offers .card_hover :hover {
     transform: scale(0.99);
     transition: 0.5s; }
@@ -163,49 +176,44 @@ header {
     margin-bottom: 30px;
     margin-top: 30px; }
 
-.see_best {
-  padding-bottom: 74px; }
-  .see_best h4 {
-    font-family: 'Readex Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 35px;
-    text-align: center;
-    color: #000000; }
-  .see_best img {
-    display: block;
-    width: 100%; }
-  .see_best p {
-    font-family: 'Readex Pro', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    color: #000000; }
-  .see_best .btn {
-    width: 170px;
-    height: 50px;
-    border: 1px solid #000000;
-    border-radius: 200px;
-    font-family: 'Inter', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    text-transform: capitalize;
-    color: #000000;
-    margin-left: 90px;
-    margin-bottom: 30px;
-    margin-top: 30px; }
-  .see_best .card_hover :hover {
-    transform: scale(1.04);
-    transition: 0.35s; }
+.see_the_best h4 {
+  font-family: 'Readex Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 35px;
+  color: #000000; }
+.see_the_best p {
+  font-family: 'Readex Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000; }
+.see_the_best .btn {
+  width: 170px;
+  height: 50px;
+  border: 1px solid #000000;
+  border-radius: 200px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: capitalize;
+  color: #000000;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding: 14px; }
+.see_the_best .card_hover :hover {
+  background-color: white;
+  transform: scale(1.04);
+  transition: 0.35s; }
 
 .ideas {
   padding-top: 68px;
-  padding-bottom: 134px; }
+  padding-bottom: 75px; }
   .ideas h4 {
     font-family: 'Readex Pro', sans-serif;
     font-style: normal;
@@ -239,7 +247,8 @@ header {
     text-transform: capitalize;
     color: #000000;
     text-decoration: none;
-    border: none; }
+    border: none;
+    padding: 12px 22px; }
   .ideas .arrow {
     bottom: 4px;
     left: -2px; }
@@ -255,42 +264,25 @@ header {
     font-size: 42px;
     line-height: 52px;
     text-align: center;
-    color: #000000; }
+    color: #000000;
+    margin-bottom: 24px; }
   .looking_for_more .btn {
     border-radius: 200px;
     background: #FFFFFF;
-    border: 1px solid #C5C5C5;
     padding: 12px 22px 13px 22px;
-    margin-right: 7px; }
-    .looking_for_more .btn:hover {
-      background-color: #4e555b;
-      transform: scale(1.2);
-      transition: 0.5s; }
-  .looking_for_more i:hover {
-    transform: scale(1.2);
-    transition: 0.5s; }
-  .looking_for_more a {
-    text-decoration: none;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #000000; }
-  .looking_for_more .first_line {
-    margin-left: 292px; }
-  @media screen and (max-width: 390px) {
-    .looking_for_more .first_line {
-      margin-left: 50px; }
-      .looking_for_more .first_line .last_button {
-        margin-left: 70px; } }
-  .looking_for_more .second_line {
-    margin-left: 350px; }
-  @media screen and (max-width: 390px) {
-    .looking_for_more .second_line {
-      margin-left: 50px; }
-      .looking_for_more .second_line .last_button {
-        margin-left: 70px; } }
+    .looking_for_more .btn:hover {
+      background-color: white;
+      transform: scale(1.2);
+      transition: 0.5s; }
+  .looking_for_more i:hover {
+    transform: scale(1.2);
+    transition: 0.5s; }
   .looking_for_more .form-control-borderless {
     border: none; }
   .looking_for_more .form-control-borderless:hover, .looking_for_more .form-control-borderless:active, .looking_for_more .form-control-borderless:focus {
@@ -316,8 +308,8 @@ header {
 .email {
   background: #DCE5E2;
   max-width: 935px;
-  height: 450px;
-  border-radius: 16px; }
+  border-radius: 16px;
+  padding-bottom: 43px; }
   .email h1 {
     font-family: 'Readex Pro', sans-serif;
     font-style: normal;
@@ -339,7 +331,7 @@ header {
   .email .form-control {
     border: 1px solid #000000;
     border-radius: 54px 0 0 54px;
-    width: 285px;
+    max-width: 285px;
     height: 50px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -350,9 +342,6 @@ header {
     color: #000000 !important;
     border-right: none;
     position: relative; }
-  @media screen and (max-width: 390px) {
-    .email .form-control {
-      margin-right: 89px; } }
   .email button {
     border: 1px solid #000000;
     width: 115px;
@@ -367,31 +356,14 @@ header {
     text-align: center;
     color: #FFFFFF;
     overflow: hidden; }
-  @media screen and (max-width: 428px) {
-    .email button {
-      position: relative;
-      bottom: 50px;
-      left: 275px; } }
-  @media screen and (max-width: 390px) {
-    .email button {
-      position: relative;
-      bottom: 50px;
-      left: 241px; } }
-  @media screen and (max-width: 360px) {
-    .email button {
-      position: relative;
-      bottom: 50px;
-      left: 203px; } }
 
 footer {
   padding-top: 63px; }
-  footer .webflow {
-    margin-left: 783px; }
-  footer .made_by {
+  footer .web {
+    position: relative;
+    bottom: 58px; }
+  footer .line {
     border-top: 2px solid #DCE5E2; }
-  @media screen and (max-width: 390px) {
-    footer .made_by {
-      margin-left: 125px; } }
   footer p {
     font-family: 'Inter', sans-serif;
     font-style: normal;

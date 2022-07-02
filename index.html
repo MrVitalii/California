@@ -17,49 +17,53 @@
 </head>
 <body>
 
-<header class="w-100">
+<header>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light d-flex  justify-content-between">
+            <a href="#"> <img src="images/California_logo.svg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center text-dark" id="navbarSupportedContent">
+                <ul class="navbar-nav m-0 ">
+                    <li class="nav-item active mr-lg-3">
+                        <a class="nav-link hover" href="#">ALL PRODUCTS</a>
+                    </li>
+                    <li class="nav-item active dropdown mr-lg-3">
+                        <a class="nav-link active hover" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown"
+                           aria-expanded="false">
+                            SOLUTIONS
+                            <img src="images/Vector.svg" alt="vector">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Pre-order</a>
+                            <a class="dropdown-item" href="#">Buy</a>
+                            <a class="dropdown-item" href="#">Exchange</a>
+                            <a class="dropdown-item" href="#"> <i class="fa-solid fa-magnifying-glass"></i> Find
+                                something</a>
+                            <a class="dropdown-item" href="#"> <i class="fa-solid fa-cart-shopping"></i> Shopping
+                                cart</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active  mr-lg-3">
+                        <a class="nav-link hover" href="#">ABOUT</a>
+                    </li>
+                    <li class="nav-item active hover">
+                        <a class="nav-link" href="#">SUPPORT</a>
+                    </li>
+                </ul>
+            </div>
 
-    <nav class="navbar navbar-expand-lg navbar-light container">
-        <a class="logo" href="#"><img src="images/California_logo.svg"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="main_group navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">ALL PRODUCTS</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link active " href="#" id="navbarDropdown" role="button"
-                       data-toggle="dropdown"
-                       aria-expanded="false">
-                        SOLUTIONS
-                        <img src="images/Vector.svg">
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Pre-order</a>
-                        <a class="dropdown-item" href="#">Buy</a>
-                        <a class="dropdown-item" href="#">Exchange</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">ABOUT</a>
-                </li>
-                <a class="nav-link active support" href="#">SUPPORT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"> <i class="fa-solid fa-magnifying-glass"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#"> <i class="fa-solid fa-cart-shopping"></i></a>
-                </li>
-            </ul>
-
-        </div>
-    </nav>
-
+            <div class="d-none d-lg-block ">
+                <a href="#" class="mr-3 "><img src="images/shoping.svg" alt="shop_icon"></a>
+                <a class="nav-item active" href="#"> <img src="images/FIND.svg" alt="search_icon"></a>
+            </div>
+        </nav>
+    </div>
 </header>
+
 
 <section class="main_page">
     <div class="container">
@@ -128,7 +132,7 @@
             consectetur adipiscing elit.</p>
         <div class="row card_hover">
 
-            <div class=" pl-0 pr-2 col-lg-6 ">
+            <div class="pl-0 pr-2 col-lg-6 col-md-12 ">
                 <div class="mb-4 shadow-lg text-right px-5 bg-white ">
                     <div>
                         <img class="d-block w-100" src="images/macbook.jpg" alt="image">
@@ -137,7 +141,7 @@
                     <h4 class="mb-0 ml-auto">True Laptop Solution</h4>
                 </div>
 
-                <div class="watches shadow-lg d-flex px-5 align-items-center justify-content-center w-100 bg-white position-relative">
+                <div class="watches col-md-12  shadow-lg d-flex align-items-center justify-content-center w-100 bg-white position-relative">
                     <img class="d-block" src="images/watches.jpg" alt="image">
                     <div class="p-0">
                         <p class="mb-0">Watch</p>
@@ -146,7 +150,7 @@
                 </div>
             </div>
 
-            <div class="double_iphones col-lg-3 d-flex align-items-stretch px-2">
+            <div class="double_iphones col-lg-3 col-md-6  d-flex align-items-stretch px-2">
                 <div class=" shadow-lg pl-3 d-flex align-items-center justify-content-center flex-column bg-white">
                     <img class="d-block w-100 mb-5" src="images/some_iphones.jpg" alt="image">
                     <p class="mb-0">Phones</p>
@@ -154,10 +158,10 @@
                 </div>
             </div>
 
-            <div class=" d-flex align-items-stretch col-lg-3 pl-2 pr-0">
+            <div class=" col-md-6 d-flex align-items-stretch col-lg-3 pl-2 pr-0">
                 <div class="shadow-lg w-100 d-flex align-items-center justify-content-center flex-column bg-white">
                     <p class="mb-0">Tablet</p>
-                    <h4 class="mb-5  px-1">Empower your work</h4>
+                    <h4 class="mb-5 px-1">Empower your work</h4>
                     <img class="d-block w-100" src="images/ipad.jpg" alt="image">
                 </div>
             </div>
@@ -204,39 +208,71 @@
     </div>
 </section>
 
-<section class="see_best container">
-    <h1 class="text-center">See the best around here</h1>
-    <p>Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
+<section class="see_the_best">
+    <div class="text-center container">
+        <h1>See the best around here</h1>
+        <p>Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
+        <div class="row">
 
-    <div class="d-flex row card_hover">
-        <div class=" col-12 col-sm-3 col-lg-4">
-            <p>Smart light bulb pack</p>
-            <h4>Latest and gratest</h4>
-            <button type="button" class=" btn btn-outline-secondary">Explore</button>
-            <img class="d-block w-100" src="images/latest_watches.jpg" alt="watches">
-        </div>
+            <div class="col-xl-4 card_hover">
+                <div class="card border-0 mb-2 flex-row-reverse flex-xl-column">
+                    <div class="card-body mb-2">
+                        <p class="card-text mb-0">
+                            Smart light bulb pack
+                        </p>
+                        <h4 class="card-title mb-5">
+                            Every product
+                        </h4>
+                        <a href="#" class=" btn btn-outline-secondary">Explore</a>
+                    </div>
+                    <div class="mr-auto ml-auto d-flex align-items-center align-items-sm-start">
+                        <img class="d-block w-100 card-img-top" src="images/latest_watches.jpg" alt="apple_watch">
+                    </div>
+                </div>
+            </div>
 
-        <div class="col-12 col-sm-6 col-lg-4">
-            <p>Smart light bulb pack</p>
-            <h4>Best selling</h4>
-            <button type="button" class=" btn btn-outline-secondary">Explore</button>
-            <img class="" src="images/best_phones.jpg" alt="gadgets">
+            <div class="col-xl-4 card_hover">
+                <div class="card border-0 mb-2 flex-row-reverse flex-xl-column">
+                    <div class="card-body mb-2">
+                        <p class="card-text mb-0">
+                            Smart light bulb pack
+                        </p>
+                        <h4 class="card-title mb-5">
+                            Every product
+                        </h4>
+                        <a href="#" class=" btn btn-outline-secondary">Explore</a>
+                    </div>
+                    <div class="mr-auto ml-auto d-flex align-items-center align-items-sm-start">
+                        <img class="d-block w-100 card-img-top" src="images/best_phones.jpg" alt="best_phones">
+                    </div>
+                </div>
+            </div>
 
-        </div>
+            <div class="col-xl-4 card_hover">
+                <div class="card border-0 mb-2 flex-row-reverse flex-xl-column">
+                    <div class="card-body mb-2">
+                        <p class="card-text mb-0">
+                            Smart light bulb pack
+                        </p>
+                        <h4 class="card-title mb-5">
+                            Every product
+                        </h4>
+                        <a href="#" class=" btn btn-outline-secondary">Explore</a>
+                    </div>
+                    <div class="mr-auto ml-auto d-flex align-items-center align-items-sm-start">
+                        <img class="d-block w-100 card-img-top" src="images/every_product.jpg" alt="macbook">
+                    </div>
+                </div>
+            </div>
 
-        <div class=" col-12 col-sm-6 col-lg-4">
-            <p>Smart light bulb pack </p>
-            <h4>Every product</h4>
-            <button type="button" class=" btn btn-outline-secondary">Explore</button>
-            <img class=" " src="images/every_product.jpg" alt="macbook">
         </div>
     </div>
 </section>
 
 <section class="ideas">
-    <div class="container">
-        <h4 class="text-center">Ideas have a place here</h4>
-        <h5 class="text-center">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</h5>
+    <div class="container text-center">
+        <h4>Ideas have a place here</h4>
+        <h5>Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</h5>
         <div class="row align-items-center">
             <div class="col-12 col-lg-7">
                 <img src="images/IDEAS.jpg" class="w-100 d-block mb-3" alt="">
@@ -256,54 +292,47 @@
                 </p>
             </div>
         </div>
-
     </div>
     <div class="text-center see_all">
         <a href="#"> See all</a>
-        <img class="arrow position-relative" src="images/arrow.svg">
+        <img class="arrow position-relative" src="images/arrow.svg" alt="arrow">
     </div>
 </section>
 
 <section class="looking_for_more">
-    <div class="container">
+    <div class="container text-center">
 
-        <div><h1 class="text-center">Looking for anything else?</h1></div>
+        <h1>Looking for anything else?</h1>
 
-
-        <br/>
         <div class="row justify-content-center">
             <div class="col-12 col-md-10 col-lg-8">
                 <form class="card card-sm  mb-3  ml-auto mr-auto overflow-hidden">
                     <div class="card-body row no-gutters align-items-center">
                         <div class="col-auto">
-                            <i class="fas h4 text-body"> <img src="images/search_form.svg"></i>
+                            <i class="fas h4 text-body"> <img src="images/search_form.svg" alt="search"></i>
                         </div>
-                        <div class="col">
+                        <label>
                             <input class="form-control form-control-lg form-control-borderless" type="search"
                                    placeholder="Search keyword">
-                        </div>
+
+                        </label>
                     </div>
                 </form>
             </div>
+
+            <div class="col-12 col-sm-10 col-xl-6 chapter ml-auto mr-auto mb-2 mb-lg-3">
+                <a href="#" class="btn btn-light border  mb-2">iPhone</a>
+                <a href="#" class="btn btn-light border  mb-2">Charger</a>
+                <a href="#" class="btn btn-light border  mb-2">Gift</a>
+                <a href="#" class="btn btn-light border  mb-2">Google Pixel 3</a>
+                <a href="#" class="btn btn-light border  mb-2">Keyboard</a>
+
+                <a href="#" class="btn btn-light border mb-2">13 Pro Max</a>
+                <a href="#" class="btn btn-light border  mb-2">iPhone 12</a>
+                <a href="#" class="btn btn-light border  mb-2">Laptop</a>
+                <a href="#" class="btn btn-light border  mb-2">Mobile</a>
+            </div>
         </div>
-        <div class="first_line mb-2">
-            <ul class="list-unstyled d-flex row ">
-                <li><a href="#" class="btn btn-light border mb-2">iPhone</a></li>
-                <li><a href="#" class="btn btn-light border">Charger</a></li>
-                <li><a href="#" class="btn btn-light border">Gift</a></li>
-                <li><a href="#" class="btn btn-light border">Google Pixel 3</a></li>
-                <li><a href="#" class="btn btn-light border">Keyboard</a></li>
-            </ul>
-        </div>
-        <div class="second_line mb-2">
-            <ul class="list-unstyled d-flex row">
-                <li><a href="#" class="btn btn-light border mb-2">13 Pro Max</a></li>
-                <li><a href="#" class="btn btn-light border">iPhone 12</a></li>
-                <li><a href="#" class="btn btn-light border">Laptop</a></li>
-                <li><a href="#" class="btn btn-light border last_button">Mobile</a></li>
-            </ul>
-        </div>
-    </div>
     </div>
 </section>
 
@@ -311,7 +340,7 @@
     <div class="m-auto">
         <h1 class="text-center">Never miss a thing</h1>
         <p class="text-center">Sign up for texts to be notified about our best offers on the perfect gifts.</p>
-        <img class="d-block ml-auto m-auto" src="images/never_miss.svg">
+        <img class="d-block ml-auto m-auto" src="images/never_miss.svg" alt="img">
 
         <form class="m-auto col-12 col-sm-6">
             <label class="input-group  ">
@@ -327,8 +356,9 @@
 </section>
 
 <footer>
-    <div class="container">
-        <div class="row">
+
+    <div class="container line">
+        <div class="row pt-3">
             <div class="col-lg-4 align-items-start">
                 <a href="#"><img src="images/California_logo.svg" alt="logo"></a>
                 <p>Sign up for texts to be notified about <br> our best offers on the perfect gifts.</p>
@@ -371,15 +401,15 @@
                     <li><a href="https://www.youtube.com/">Youtube</a></li>
                 </ul>
             </div>
-
-            <div class="py-3 pt-lg-5 made_by">
-                <p class="d-inline"> Made By:Azwedo</p>
-                <img src="images/Azvedo.svg" alt="logo">
-                <p class="d-inline webflow"> Powered by:Webflow </p>
-                <img src="images/Azvedo.svg" alt="logo">
-            </div>
         </div>
     </div>
+
+    <div class="container line">
+        <p class="d-flex justify-content-md-start"> Made By:Azwedo <img class="" src="images/Azvedo.svg" alt="logo"></p>
+        <p class="d-flex justify-content-end web"> Powered by:Webflow  <img class="" src="images/Azvedo.svg" alt="logo"></p>
+    </div>
+
+
 </footer>
 
 

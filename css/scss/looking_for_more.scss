@@ -15,17 +15,22 @@ $black: #000000;
     line-height: 52px;
     text-align: center;
     color: #000000;
+    margin-bottom: 24px;
   }
 
   .btn {
     border-radius: 200px;
     background: #FFFFFF;
-    border: 1px solid #C5C5C5;
     padding: 12px 22px 13px 22px;
-    margin-right: 7px;
+    font-family: $secondary_font;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
 
     &:hover {
-      background-color: #4e555b;
+      background-color: white;
       transform: scale(1.2);
       transition: 0.50s;
     }
@@ -36,35 +41,6 @@ $black: #000000;
     transition: 0.50s;
   }
 
-  a {
-    text-decoration: none;
-    font-family: $secondary_font;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-  }
-
-  .first_line {
-    margin-left: 292px;
-    @include max-screen(390px) {
-      margin-left: 50px;
-      .last_button {
-        margin-left: 70px;
-      }
-    }
-  }
-
-  .second_line {
-    margin-left: 350px;
-    @include max-screen(390px) {
-      margin-left: 50px;
-      .last_button {
-        margin-left: 70px;
-      }
-    }
-  }
 
   .form-control-borderless {
     border: none;

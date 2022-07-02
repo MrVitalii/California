@@ -19,15 +19,15 @@ $black: #000000;
 
 footer {
   padding-top: 63px;
-  .webflow {
-    margin-left: 783px;
+  .web {
+    position: relative;
+    bottom: 58px;
   }
 
-  .made_by {
-    border-top: 2px solid #DCE5E2;
-    @include max-screen(390px) {
-      margin-left: 125px;
-    }
+
+  .line {
+    border-top: 2px solid #DCE5E2;;
+
   }
 
   p {

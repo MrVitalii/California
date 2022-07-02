@@ -19,8 +19,8 @@ $black: #000000;
 .email{
   background: #DCE5E2;
   max-width: 935px;
-  height: 450px;
   border-radius: 16px;
+  padding-bottom: 43px;
   h1{
     font-family: $main_font;
     font-style: normal;
@@ -43,10 +43,10 @@ $black: #000000;
     line-height: 19px;
     color: #000000;
   }
-  .form-control{
+  .form-control {
     border: 1px solid #000000;
     border-radius: 54px 0 0 54px;
-    width: 285px;
+    max-width: 285px;
     height: 50px;
     font-family: $secondary_font;
     font-style: normal;
@@ -57,9 +57,8 @@ $black: #000000;
     color: #000000 !important;
     border-right: none;
     position: relative;
-    @include max-screen(390px){
-margin-right: 89px;
-    }
+
+
   }
   button {
     border: 1px solid #000000;
@@ -76,20 +75,5 @@ margin-right: 89px;
     color: #FFFFFF;
     overflow: hidden;
 
-    @include max-screen(428px) {
-      position: relative;
-      bottom: 50px;
-      left: 275px;
-    }
-    @include max-screen(390px) {
-      position: relative;
-      bottom: 50px;
-      left: 241px;
-    }
-    @include max-screen(360px) {
-      position: relative;
-      bottom: 50px;
-      left: 203px
-    }
   }
 }

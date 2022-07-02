@@ -5,8 +5,7 @@ $white: #F5F5F5;
 $black: #000000;
 
 
-.see_best {
-  padding-bottom: 74px;
+.see_the_best {
 
     h4 {
       font-family: $main_font;
@@ -14,14 +13,9 @@ $black: #000000;
       font-weight: 400;
       font-size: 28px;
       line-height: 35px;
-      text-align: center;
       color: #000000;
     }
 
-    img {
-      display: block;
-      width: 100%;
-    }
 
     p {
       font-family: $main_font;
@@ -44,11 +38,13 @@ $black: #000000;
       line-height: 22px;
       text-transform: capitalize;
       color: $black;
-      margin-left: 90px;
       margin-bottom: 30px;
       margin-top: 30px;
+      padding: 14px;
     }
+
    .card_hover :hover  {
+     background-color: white;
     transform: scale(1.04);
     transition: 0.35s;}
   }

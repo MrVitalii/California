@@ -16,24 +16,48 @@ $black: #000000;
   }
 }
 
-.latest_offers{
+.latest_offers {
   .watches {
+    img {
+      @include max-screen(428px) {
+        max-width: 340px;
+      }
+    }
+
+    @include max-screen(375px) {
+      margin-left: 11px;
+    }
     @include max-screen(390px) {
-     max-width: 150px;
+      max-width: 150px;
+    }
+    @include max-screen(428px) {
+      display: flex;
     }
   }
-  .double_iphones{
+
+  .double_iphones {
+    @include max-screen(375px) {
+      margin-right: 42px;
+
+    }
     @include max-screen(390px) {
       margin-left: 20px;
       padding-top: 20px;
       padding-bottom: 10px;
     }
+    @include max-screen(428px) {
+      margin-left: 42px;
+      margin-top: 5px;
+    }
   }
+
   padding-top: 75px;
   padding-bottom: 75px;
-  .card_hover :hover  {
+
+  .card_hover :hover {
     transform: scale(0.99);
-    transition: 0.50s;}
+    transition: 0.50s;
+  }
 }
 
 
