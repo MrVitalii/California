@@ -16,29 +16,32 @@ $black: #000000;
   }
 }
 
-
 footer {
-
   padding-top: 63px;
-
   .developers{
     .web {
       position: relative;
       bottom: 58px;
+      @include max-screen(390px){
+        bottom: 25px;
+        right: 21%;
+      }
     }
-
+    .made{
+      @include max-screen(390px){
+       justify-content: center;
+    }
   }
-
+  }
 
   .line {
     border-top: 2px solid #DCE5E2;;
   }
-
   p {
     font-family: $secondary_font;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 19px;
     color: #000000;
     padding-top: 18px;
@@ -80,9 +83,9 @@ footer {
     font-size: 18px;
     line-height: 22px;
     color: #000000;
-
   }
 }
+
 
 
 
