@@ -140,7 +140,11 @@ header {
     transform: scale(0.99);
     transition: 0.5s; }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 428px) {
+  .shadow {
+    box-shadow: none !important; } }
+
+@media screen and (max-width: 428px) {
   .shadow-lg {
     box-shadow: none !important; } }
 
