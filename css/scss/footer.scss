@@ -54,6 +54,10 @@ footer {
     font-size: 22px;
     line-height: 28px;
     color: #000000;
+    @include max-screen(992px){
+      font-weight: bolder;
+      font-size: 15px;
+    }
   }
 
   a {
