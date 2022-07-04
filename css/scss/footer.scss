@@ -10,33 +10,33 @@ $black: #000000;
   }
 }
 
-@mixin landscape {
-  @media (orientation: landscape) {
-    @content;
-  }
-}
-
 footer {
   padding-top: 63px;
-  .developers{
+
+  .developers {
     .web {
       position: relative;
       bottom: 58px;
-      @include max-screen(390px){
+      @include max-screen(390px) {
         bottom: 25px;
         right: 21%;
+        @include max-screen(280px) {
+          right: 10%;
+        }
       }
     }
-    .made{
-      @include max-screen(390px){
-       justify-content: center;
+
+    .made {
+      @include max-screen(390px) {
+        justify-content: center;
+      }
     }
-  }
   }
 
   .line {
     border-top: 2px solid #DCE5E2;;
   }
+
   p {
     font-family: $secondary_font;
     font-style: normal;
@@ -54,7 +54,7 @@ footer {
     font-size: 22px;
     line-height: 28px;
     color: #000000;
-    @include max-screen(992px){
+    @include max-screen(992px) {
       font-weight: bolder;
       font-size: 15px;
     }
@@ -67,12 +67,14 @@ footer {
     font-size: 17px;
     line-height: 22px;
     color: #000000;
-    text-decoration: none!important;
+    text-decoration: none !important;
   }
-  li{
+
+  li {
     padding-bottom: 14px;
   }
-  .readex{
+
+  .readex {
     font-family: $main_font;
     font-style: normal;
     font-weight: 400;
@@ -80,7 +82,8 @@ footer {
     line-height: 22px;
     color: #000000;
   }
-  .inter{
+
+  .inter {
     font-family: $secondary_font;
     font-style: normal;
     font-weight: 400;

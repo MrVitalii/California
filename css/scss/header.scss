@@ -10,12 +10,6 @@ $black: #000000;
   }
 }
 
-@mixin landscape {
-  @media (orientation: landscape) {
-    @content;
-  }
-}
-
 header {
   padding-top: 31px;
   padding-bottom: 57px;
@@ -29,10 +23,18 @@ header {
     text-transform: uppercase;
     color: #000000;
   }
-  .hover{
-    &:hover{
+
+  .hover {
+    &:hover {
       transform: scale(0.9);
       transition: 0.5s;
+    }
+  }
+
+  .navbar-toggler {
+    @include max-screen(280px) {
+      margin-top: -24px;
+      margin-left: 180px;
     }
   }
 }

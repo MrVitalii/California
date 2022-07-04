@@ -10,14 +10,11 @@ $black: #000000;
   }
 }
 
-@mixin landscape {
-  @media (orientation: landscape) {
-    @content;
-  }
-}
-
 .latest_offers {
-  h2{
+  padding-top: 75px;
+  padding-bottom: 75px;
+
+  h2 {
     font-family: $main_font;
     font-style: normal;
     font-weight: 400;
@@ -26,27 +23,30 @@ $black: #000000;
     color: #000000;
   }
 
-  .lorem_paragraph{
+  .lorem_paragraph {
     font-family: $main_font;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: #000000;
-    max-width:628px;
+    max-width: 628px;
   }
 
-  h4{
+  h4 {
     font-family: $main_font;
     font-style: normal;
     font-weight: 400;
     font-size: 32px;
     line-height: 38px;
     color: #000000;
+    @include max-screen(280px) {
+      font-size: 27px;
+    }
   }
 
-  p{
-    font-family:$secondary_font;
+  p {
+    font-family: $secondary_font;
     font-style: normal;
     font-weight: 400;
     font-size: 15px;
@@ -55,16 +55,15 @@ $black: #000000;
   }
 
   .watches {
-    img {
-
     @include max-screen(428px) {
-      max-width: 177px;
+      max-width: 396px;
+      padding-top: 5px;
+    }
+    @include max-screen(280px) {
+      max-width: 248px;
+      padding-top: 10px;
     }
   }
-}
-
-  padding-top: 75px;
-  padding-bottom: 75px;
 
   .card_hover :hover {
     transform: scale(0.99);
@@ -72,10 +71,11 @@ $black: #000000;
   }
 }
 
-.shadow-lg{
-  @include max-screen(428px){
-    box-shadow: none!important;
+.shadow-lg {
+  @include max-screen(428px) {
+    box-shadow: none !important;
   }
 }
+
 
 

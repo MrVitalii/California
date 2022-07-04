@@ -27,11 +27,6 @@ $black: #000000;
   }
 }
 
-@mixin landscape {
-  @media (orientation: landscape) {
-    @content;
-  }
-}
 
 
 
