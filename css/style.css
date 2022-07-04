@@ -222,8 +222,10 @@ header {
   margin-bottom: 30px;
   margin-top: 30px;
   padding: 14px; }
+.see_the_best .card {
+  background: #F8F9FA;
+  border-radius: 16px; }
 .see_the_best .card_hover :hover {
-  background-color: white;
   transform: scale(1.04);
   transition: 0.35s; }
 

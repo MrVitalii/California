@@ -43,8 +43,12 @@ $black: #000000;
       padding: 14px;
     }
 
+  .card{
+    background: #F8F9FA;
+    border-radius: 16px;
+  }
+
    .card_hover :hover  {
-     background-color: white;
     transform: scale(1.04);
     transition: 0.35s;}
   }
